@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*inicio del estilo del header*/
+header{
+    background-image: linear-gradient(to bottom, blue, lightblue);
+    width: auto;
+    height: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+header h1{
+    padding: 10px;
+}
+header:hover{
+    transform: scale(1.1,1.1);
+}
+/*final del estilo del header*/
+/*inicio del estilo del footer*/
+footer{
+    background-image: linear-gradient(to top, blue, lightblue);
+    width: auto;
+    height: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center; 
+}
+footer h3{
+    padding: 10px;
+}
+footer:hover{
+    transform: scale(1.1, 1.1);
+}
+/*final del estilo del footer*/
+/*inicio del estilo del contenido*/
+main{
+    width: 100%;
+    display: flex;
+}
+div{
+    height: 300px;
+    width: 60%;
+    margin-left: 20px;
+    background-color: aqua;
+    animation-duration: 7s;
+    animation-name: contenido;
+    animation-iteration-count: infinite;
+}
+div h2{
+    padding: 10px;
+}
+div p{
+    padding: 10px;
+}
+@keyframes contenido{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        background-color: aquamarine;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+/*final del estilo del contenido*/
+/*inicio del estilo del aside*/
+aside{
+    width: 20%;
+    margin-right: 20px;
+    background-color: aquamarine;
+    padding: 10px;
+    margin-left: 100px;
+    transition: all 2s ease;
+}
+aside p{
+    margin-top: 20px;
+}
+aside:hover{
+    width: 40%;
+    background-color: aqua;
+    margin-left: 0px;
+}
+/*final del estilo del aside*/
